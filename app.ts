@@ -39,3 +39,19 @@ if (person.role === Role.ADMIN) {
 
 //ENUM Type saves us from having to manage the global constants and remembering the variable names
 // to use it while doing some conditionals.
+
+function add(n1: number, n2: number) {
+  return n1 + n2;
+}
+
+function printResult(num: number): void {
+  console.log("result:" + num);
+}
+
+let combineValues: (a: number, b: number) => number;
+
+combineValues = add;
+
+// FUNCTION AS TYPES
+// Here is how we can define a variable with a function type
+// a function that takes two number parameters and returns a number
